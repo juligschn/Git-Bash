@@ -35,6 +35,3 @@ touch 1.txt|touch 2.txt|touch 3.txt|touch 4.json|touch 5.json
 mkdir Folder1.1|mkdir Folder1.2|mkdir Folder1.3
 ls -la
 mv 4.json 5.json Folder1.1
-
-first line
-second line
