@@ -1,0 +1,1020 @@
+http://itcareer.pythonanywhere.com/
+
+List of UI bugs																								
+"1. Different style of prefilled information in fields: ""Name?"", ""Your email address.""
+2. The title ""Submit"" isn't situated in the middle of the button
+3. The page's title doesn't explain the purpose of the page
+4. There is no icon for showing the symbols in the field ""Password""
+5. The frame of the field doesn't change its colour when the invalid data has been entered. 
+6. Surname instead of Last name
+7. There is no information about the data and restrictions that every field requires. 
+8. Information in the error massage is doubled: ""Error: Error""
+9. The same error massage appears after different errors and inputs of incorrect data"																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+ID	B-1	Severity	Major																					
+Project	Demo-form	Priority																						
+Version	1	Status	Open																					
+Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
+Assigned to	Vadim																							
+Title																								
+Filling in the field "Surname" is obligatory during registration																								
+Preconditions																								
+Open the website http://itcareer.pythonanywhere.com/																								
+STR																								
+"1. Fill in the field ""Name"" using the valid data  (e.g. Julia)
+2. Fill in the field ""Email"" using the valid data (e.g. juliajulia@gmail.com)
+3. Fill in the field ""Password"" using the valid data (e.g. qwerty123)
+4. Left the field ""Surname"" empty 
+5. Click the button ""Submit"""																								
+																								
+																								
+																								
+Expected Result																								
+The registration is succesful. The customer recieves a massage "Success! Hello Username"																								
+Actual Result																								
+The registration isn't complete. The customer recieves a massage "Error. All fields are required"																								
+Note																								
+																								
+Attachment																								
+																								
+																								
+ID	B-2	Severity	Show stopper																					
+Project	Demo-form	Priority																						
+Version	1	Status	Open																					
+Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
+Assigned to	Vadim																							
+Title																								
+The fields "Name" and 'Surname" require at least 4 symbols for succesful registration																								
+Preconditions																								
+Open the website http://itcareer.pythonanywhere.com/																								
+STR																								
+"1. Fill in the field ""Name"" using the valid data (1-3 symbols, e.g. Jam)
+2. Fill in the field ""Surname"" using the valid data (1-3 symbols, e.g. Jo)
+3. Fill in the field ""Email"" using the valid data (jamjo@yandex.ru)
+4. Fill in the field ""Password"" using the valid data (qwerty123)
+5. Click the button ""Submit"""																								
+																								
+																								
+																								
+Expected Result																								
+The registration is succesful. The customer recieves a massage "Success! Hello Username Usersurname"																								
+Actual Result																								
+The registration isn't complete. The customer recieves a massage "Error. All fields are required"																								
+Note																								
+																								
+Attachment																								
+																								
+																								
+ID	B-3	Severity	Major																					
+Project	Demo-form	Priority																						
+Version	1	Status	Open																					
+Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
+Assigned to	Vadim																							
+Title																								
+More than 1 click is required while choosing the field or tapping  the button "Submit"																								
+Preconditions																								
+Open the website http://itcareer.pythonanywhere.com/																								
+STR																								
+"1. Point the cursor at the any field or the button ""Submit""
+2. Click the cursor
+"																								
+																								
+Expected Result																								
+The action of the button "Submit" and all fields is reproduced after the first click																								
+Actual Result																								
+The action of the button "Submit" and all fields is reproduced after several clicks																								
+Note																								
+																								
+Attachment																								
+																								
+																								
+ID	B-4	Severity	Major																					
+Project	Demo-form	Priority																						
+Version	1	Status	Open																					
+Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
+Assigned to	Vadim																							
+Title																								
+The Cyrillic alphabet is acceptable in any field																								
+Preconditions																								
+Open the website http://itcareer.pythonanywhere.com/																								
+STR																								
+"1. Fill in the field ""Name"" using Cyrillic symbols (e.g. Петр)
+2. Fill in the field ""Surname"" using Cyrillic symbols (e.g. Семенов)
+3. Fill in the field ""Email"" using Cyrillic symbols (e.g. семеновпетр@джимейл.ком)
+4. Fill in the field ""Password"" using Cyrillic symbols (e.g. йцукен11)
+5. Click the button ""Submit"""																								
+																								
+																								
+																								
+Expected Result																								
+The registration isn't complete. The customer recieves a massage "Error. Only the Latin alphabet is allowed"																								
+Actual Result																								
+The registration is succesful. The customer recieves a massage "Success! Hello Петр Семенов"																								
+Note																								
+																								
+Attachment																								
+																								
+																								
+ID	B-5	Severity	Critical																					
+Project	Demo-form	Priority																						
+Version	1	Status	Open																					
+Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
+Assigned to	Vadim																							
+Title																								
+Any special symbols are acceptable in any field																								
+Preconditions																								
+Open the website http://itcareer.pythonanywhere.com/																								
+STR																								
+"1. Fill in the field ""Name""using special symbols (e.g. ####)
+2. Fill in the field ""Surname"" using special symbols (e.g. &&&&)
+3. Fill in the field ""Email"" using Cyrillic special (e.g. ****)
+4. Fill in the field ""Password"" using special symbols (e.g. ++++)
+5. Click the button ""Submit"""																								
+																								
+																								
+																								
+Expected Result																								
+The registration isn't completed. The customer recieves hints about incorrect data in the fields																								
+Actual Result																								
+The registration is succesful. The customer recieves a massage "Success! Hello  ####  &&&&"																								
+Note																								
+																								
+Attachment																								
+																								
+																								
+ID	B-6	Severity	Major																					
+Project	Demo-form	Priority																						
+Version	1	Status	Open																					
+Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
+Assigned to	Vadim																							
+Title																								
+Fields "Name", "Surname" and "Email" require not more than 25 symbols for successful registration																								
+Preconditions																								
+Open the website http://itcareer.pythonanywhere.com/																								
+STR																								
+"1. Fill in the field ""Name"" using 26 or more symbols (e.g. Santa Jose Murtues Padilla Huanita)
+2. Fill in the field ""Surname"" using 26 or more symbols (e.g. Santa Jose Murtues Padilla Trabajerro)
+3. Fill in the field ""Email"" using 26 or more symbols (e.g. Santajose@murtuespadillatrabajerro.com)
+4. Fill in the field ""Password"" with a valid data
+5. Click the button ""Submit"""																								
+																								
+																								
+																								
+Expected Result																								
+The registration is succesful. The customer recieves a massage "Success! Hello Santa Jose Murtues Padilla Huanita Santa Jose Murtues Padilla Trabajerro"																								
+																								
+Actual Result																								
+The registration isn't complete. The customer recieves a massage "Error. All fields are required"																								
+Note																								
+																								
+Attachment																								
+																								
+																								
+ID	B-7	Severity	Major																					
+Project	Demo-form	Priority																						
+Version	1	Status	Open																					
+Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
+Assigned to	Vadim																							
+Title																								
+There is no restriction about the number of symbols that can be entered in the each field before clickin the button "Submit". 																								
+Preconditions																								
+Open the website http://itcareer.pythonanywhere.com/																								
+STR																								
+"1. Fill in the field ""Name"" using a big amount of symbols (e.g. 200 symbols)
+2. Fill in the field ""Surname"" using a big amount of symbols (e.g. 200 symbols)
+3. Fill in the field ""Email"" using a big amount of symbols (e.g. 200 symbols)
+4. Fill in the field ""Password"" using a big amount of symbols (e.g. 200 symbols)
+5. Click the button ""Submit"""																								
+																								
+																								
+																								
+Expected Result																								
+There is a restriction about the entered symbols. E.g. When the customer enters more than valid for each field quantity of symbols the input becomes invalid. Or the error message appears - "Unfortunately, You can't enter more than __ symbols")																								
+																								
+																								
+Actual Result																								
+It's possible to enter a big amount of symbols (more then 200), after clicking "Submit" appears  the message "Error. All fields are required" that doesn't explain the real reason of the failure. 																								
+																								
+Note																								
+																								
+Attachment																								
+																								
+																								
+ID	B-8	Severity	Major																					
+Project	Demo-form	Priority																						
+Version	1	Status	Open																					
+Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
+Assigned to	Vadim																							
+Title																								
+It is possible to sign up using only spaces in the field "Password"																								
+Preconditions																								
+Open the website http://itcareer.pythonanywhere.com/																								
+STR																								
+"1. Fill in the field ""Name"" using the valid data  (e.g. Julia)
+2. Fill in the field ""Surname"" using the valid data  (e.g. Gushchina)
+3. Fill in the field ""Email"" using the valid data (e.g.juliajulia@gmail.com)
+4. Fill in the field ""Password"" using only spaces (e.g.                       )
+5. Click the button ""Submit""                                           "																								
+																								
+																								
+																								
+Expected Result																								
+The registration isn't complete. The customer recieves a massage "Error. It's forbidden to use spaces in the field Password"																								
+																								
+Actual Result																								
+The registration is succesful. The customer recieves a massage "Success! Hello Julia  Gushchina"																								
+Note																								
+																								
+Attachment																								
+																								
+																								
+ID	B-9	Severity	Critical																					
+Project	Demo-form	Priority																						
+Version	1	Status	Open																					
+Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
+Assigned to	Vadim																							
+Title																								
+The field "Email" doesn't require the special form of email and doesn't check its compulsory parts (@, domain name, dot)																								
+Preconditions																								
+Open the website http://itcareer.pythonanywhere.com/																								
+STR																								
+"1. Fill in the field ""Name"" using the valid data  (e.g. Julia)
+2. Fill in the field ""Surname"" using the valid data  (e.g. Gushchina)
+3. Fill in the field ""Email"" using the invalid data without @, domain name and domain (e.g. juliajuliayandexcom)
+4. Fill in the field ""Password"" using the valid data (e.g. qwerty123)
+5. Click the button ""Submit"""																								
+																								
+																								
+																								
+Expected Result																								
+There is a hint under the field showing the correct fom of email. After entering the invalid data the massage for the customer about the compulsory parts and symbols appears.																								
+																								
+Actual Result																								
+The registration is succesful. The customer recieves a massage "Success! Hello Julia  Gushchina"																								
+Note																								
+																								
+Attachment																								
+																								
+																								
+IMPROVEMENTS																								
+																								
+ID	Description
+1	Add special symbols (*) to highlight the obligatiry fields
+2	Add descriptions and hints about how to fill in the fields (e.g., the quantity of symbols, allowed symbols)
+3	Add a hint under the field which appears immediately after incorrect filling in (e.g. when you fill in invalid number of symbols, there should be the information that you must add or delete symbols to reach the proper number of them)
+4	Add function that helps a client to see his password 
+5	Add the information about the personal data protection but not as a check-box because it can distract the client's attention, it's better to add this information at the bottom of the page
+6	Instead of the prefilled "Name?", 'Surname?", "Your email adress" add the examples: Name - for example "Ivan"
+7	Add the function of checking the validity of the email form  (if there is a @; if the gmail isn't written down as mgail or yandex isn't written as yamdex)
+8	Replace "Submit" with "Sign up", because the customer needs to understand exactly what he is doing by filling in this form
+9	Add some information about the website and this proper form to the page's title
+10	Add the explanation why we need such personal information as a surname. If the surname isn't the first-priority information it's better to remove this field from the registration form. The smallest the number of the necessary field is, the biggest chance that the customer won't get tired while filling in the form. Moreover we can still ask the customer to add this information to his profile after registration. 
+11	Add the gradation of the password's reliability
+12	Add the possibility to sign up using the social media networks accounts
+13	It will be user-friendly to preserve previously filled in data in the fields "name" and "surname" if the password or email were entered incorrectly and the page was restarted																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
+																								
