@@ -1,0 +1,95 @@
+ID	Title	Inputs	Expected result	Status	Actual Result	Bug Report's ID
+C-1	Registration with the valid data in all fields	"Name: Julia
+Surname: Gushchina
+Email: julia@gmail.com
+Password:Qwerty123"	Successful registration	Pass		
+C-2	Registration with the valid data in obligatory fields	"Name: Julia
+Surname: (empty)
+Email: julia@gmail.com
+Password:Qwerty123"	Successful registration	Fail	The registration isn't complete. The customer recieves a massage "Error. All fields are required"	B-1
+C-3	Registration with the invalid data in all fields	"Name: ##***
+Surname: ##***
+Email: juliagmailcom
+Password: (8 spaces)"	The registration isn't complete.	Fail	Successful registration	
+Name. Preconditions: The fields "Surname", "Email", "Password" are filled in with the valid data						
+C-4	The valid ordinary name (Latin alphabet, 1-64 symbols, both cases)	Julia	Successful registration	Pass		
+C-5	The valid ordinary name (upper case)	JULIA	Successful registration	Pass		
+C-6	The valid ordinary name (lower case)	julia	Successful registration	Pass		
+C-7	The double name (space)	Frans Ferdinand	Successful registration	Pass		
+C-8	The double name (hyphen)	Anna-Mariya	Successful registration	Pass		
+C-9	The double name (apostrophe)	D'Saad	Successful registration	Pass		
+C-10	The name with numbers	Julia 21	Successful registration	Pass		
+C-11	The name consisting of 1 symbol	A	Successful registration	Fail	The registration isn't complete.	B-2
+C-12	The name consisting of 2 symbols	Ho	Successful registration	Fail	The registration isn't complete.	B-2
+C-13	The name consisting of 64 symbols	qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqw	Successful registration	Fail	The registration isn't complete.	B-6
+C-14	The name consisting of 63 symbols	qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwe	Successful registration	Fail	The registration isn't complete.	B-6
+C-15	The name consisting of 65 symbols	qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwer	The registration isn't complete.	Pass		B-7
+C-16	Left the field empty		The registration isn't complete.  The customer recieves a massage "Error. All fields are required"	Pass		
+C-17	Only the spaces in the field 		The registration isn't complete.	Fail	Successful registration	
+C-18	The special symbols	&*Julia+	The registration isn't complete.	Fail	Successful registration	B-5
+C-19	Spaces before the name	   Julia	The registration isn't complete.	Fail	Successful registration	
+C-20	Spaces after name	Julia   	The registration isn't complete.	Fail	Successful registration	
+C-21	The name consisting of Cyrillic alphabet	Юлия	The registration isn't complete.	Fail	Successful registration	B-4
+C-22	Put in the cross-site scripting	<script>alert("I hacked this!")</script>	The registration isn't complete.	Pass		
+C-23	Put in the SQL-injection	DROP TABLE USERS	Successful registration	Pass		
+Surname. Preconditions: The fields "Name", "Email", "Password" are filled in with the valid data						
+C-24	The valid ordinary surname (Latin alphabet, 1-64 symbols)	Gushchina	Successful registration	Pass		
+C-25	The valid ordinary surname (upper case)	GUSHCHINA	Successful registration	Pass		
+C-26	The valid ordinary surname (lower case)	gushchina	Successful registration	Pass		
+C-27	The double surname (space)	Ivanov Petrov	Successful registration	Pass		
+C-28	The double surname (hyphen)	Semenova-Livitskaya	Successful registration	Pass		
+C-29	The double surname (apostrophe)	D'Artagnan	Successful registration	Pass		
+C-30	The surname with numbers	12345Ivanov	Successful registration	Pass		
+C-31	The surname consisting of 1 symbol	Z	Successful registration	Fail	The registration isn't complete.	B-2
+C-32	The surname consisting of 2 symbols	Li	Successful registration	Fail	The registration isn't complete.	B-2
+C-33	The surname consisting of 64 symbols	qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqw	Successful registration	Fail	The registration isn't complete.	B-6
+C-34	The surname consisting of 63 symbols	qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwe	Successful registration	Fail	The registration isn't complete.	B-6
+C-35	The surname consisting of 65 symbols	qwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwertyqwer	The registration isn't complete.	Pass		B-7
+C-36	Left the field empty		Successful registration. 	Fail	The registration isn't complete.	B-1
+C-37	Only the spaces in the field 		The registration isn't complete.	Fail	Successful registration	
+C-38	Special symbols	&%$Stepanchuk	The registration isn't complete.	Fail	Successful registration	B-5
+C-39	Spaces before the surname	   Guschina	The registration isn't complete.	Fail	Successful registration	
+C-40	Spaces after surname	Gushina	The registration isn't complete.	Fail	Successful registration	
+C-41	The surname consisting of Cyrillic alphabet	Гущина	The registration isn't complete.	Fail	Successful registration	B-4
+C-42	Put in the cross-site scripting	<script>alert("I hacked this!")</script>	The registration isn't complete.	Pass		
+C-43	Put in the SQL-injection	DROP TABLE USERS	Successful registration	Pass		
+Password. Preconditions: The fields "Name", "Surname", "Email" are filled in with the valid data						
+C-44	The valid password (8-24 symbols, Latin alphabet, min 1 upper case letter, min 1 number, special symbols)	Aaaaaaa1@_:	Successful registration	Pass		
+C-45	The valid password: 8-24 symbols, Latin alphabet, min 1 upper case letter, min 1 number	Aaaaaaaa12	Successful registration	Pass		
+C-46	The valid password: 8 symbols, Latin alphabet, min 1 upper case letter, min 1 number)	Aaaaaaa1	Successful registration	Pass		
+C-47	The invalid password: 7 symbols, Latin alphabet, min 1 upper case letter, min 1 number)	Aaaaaa1	The registration isn't complete.	Fail	Successful registration	
+C-48	The valid password: 9 symbols, Latin alphabet, min 1 upper case letter, min 1 number)	Aaaaaa123	Successful registration	Pass		
+C-49	The valid password: 24 symbols, Latin alphabet, min 1 upper case letter, min 1 number)	Aaaaaaaaaaaaaaaaaaaa1234	Successful registration	Pass		
+C-50	The valid password: 23 symbols, Latin alphabet, min 1 upper case letter, min 1 number)	Aaaaaaaaaaaaaaaaaaa1234	Successful registration	Pass		
+C-51	The invalid password: 25 symbols, Latin alphabet, min 1 upper case letter, min 1 number)	Aaaaaaaaaaaaaaaaaaaa12345	The registration isn't complete.	Fail	Successful registration	B-6
+C-52	The invalid password: 8-24 symbols, Latin alphabet, min 1 number, without upper case letters	aaaaaaaa12	The registration isn't complete.	Fail	Successful registration	
+C-53	The invalid password: 8-24 symbols, Latin alphabet, min upper case letter, without numbers	Aaaaaaaaa@_:	The registration isn't complete.	Fail	Successful registration	
+C-54	The invalid password: 8-24 symbols, Latin alphabet, min 1 upper case letter, min 1 number, spaces 	Aaaaaaa1  23	The registration isn't complete.	Fail	Successful registration	
+C-55	The invalid password: 8 symbols, Latin alphabet, min 1 upper case letter, min 1 number, any special symbols exept allowed ones	Aaaaaaaa12**^^#	The registration isn't complete.	Fail	Successful registration	B-5
+C-56	The invalid password: 1 symbol	f	The registration isn't complete.	Pass		
+C-57	The invalid password: 100 symbols, Latin alphabet, min 1 upper case letter, min 1 number)	aaaaaaaaaaaaaaaaaaaa1234aaaaaaaaaaaaaaaaaaaa1234aaaaaaaaaaaaaaaaaaaa1234aaaaaaaaaaaaaaaaaaaa1234QQQQ	The registration isn't complete.	Pass		
+C-58	Left the field empty		The registration isn't complete.  The customer recieves a massage "Error. All fields are required"	Pass		
+C-59	Only the spaces in the field (8-24 spaces)		The registration isn't complete.	Fail	Successful registration	B-8
+C-60	The password consisting of Cyrillic alphabet	Пароль123	The registration isn't complete.	Fail	Successful registration	B-4
+C-61	Put in the cross-site scripting	<script>alert("I hacked this!")</script>	The registration isn't complete.	Pass		
+C-62	Put in the SQL-injection	DROP TABLE USERS	Successful registration	Pass		
+Email. Preconditions: The fields "Name", "Surname", "Password" are filled in with the valid data						
+C-63	The valid email (5-128 symbols, including special symbols ".",  "_", "-" in the username, 2-64 symbols, including special symbols ".", "-" in the domain name, 2-24 symbols in the domain, Latin alphabet, @ is obligatory)	ju_lia-gus.ch@te-st.t.com	Successful registration	Pass		
+C-64	The valid email (5-128 symbols in the username, 2-64 symbols in the domain name, 2-24 symbols in the domain, second-level domain, Latin alphabet, @ is obligatory)	ju_lia-gus.ch@t-t.ru.com	Successful registration	Pass		
+C-65	The valid email (5 symbols, in the username, 2 symbols in the domain name, 2 symbols in the domain, Latin alphabet, @ is obligatory)	julia@vi.ru	Successful registration	Pass		
+C-66	The valid email (128 symbols in the username, 64 symbols in the domain name, 24 symbols in the domain, Latin alphabet, @ is obligatory)	juliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajul@juliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuli.juliajuliajuliajuliajuli	Successful registration	Fail	The registration isn't complete.	B-6
+C-67	The invalid email (4 symbols, in the username, 1 symbols in the domain name, 1 symbols in the domain, Latin alphabet, @ is obligatory)	juli@v.r	The registration isn't complete.	Fail	Successful registration	
+C-68	The invalid email (129 symbols in the username, 65 symbols in the domain name, 25 symbols in the domain, Latin alphabet, @ is obligatory)	juliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuli@juliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajulia.juliajuliajuliajuliajulia	The registration isn't complete.	Pass		
+C-69	The valid email (6 symbols, in the username, 3 symbols in the domain name, 3 symbols in the domain, Latin alphabet, @ is obligatory)	julia1@vim.rum	Successful registration	Pass		
+C-70	The valid email (127 symbols in the username, 63 symbols in the domain name, 23 symbols in the domain, Latin alphabet, @ is obligatory)	juliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliaju@juliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajuliajul.juliajuliajuliajuliajul	Successful registration	Fail	The registration isn't complete.	B-6
+C-71	The invalid email (5-128 symbols in the username, 2-64 symbols in the domain name, 2-24 symbols in the domain, special symbols exept allowed ones, Latin alphabet, @ is obligatory)	julia+"@test&$%test.com	The registration isn't complete.	Fail	Successful registration	B-5
+C-72	The invalid email (Cyrillic alphabet) 	юлиягущина@меил.ру	The registration isn't complete.	Fail	Successful registration	B-4
+C-73	The invalid email (5-128 symbols in the username, 2-64 symbols in the domain name, 2-24 symbols in the domain, Latin alphabet, @ is absent)	julia_guschina.test.com	The registration isn't complete.	Fail	Successful registration	B-9
+C-74	Left the field empty		The registration isn't complete.	Pass		
+C-75	Only the spaces in the field (min 10 spaces)		The registration isn't complete.	Fail	Successful registration	B-9
+C-76	Spaces between email parts	julia_guschina @ testing. com	The registration isn't complete.	Fail	Successful registration	B-9
+C-77	The invalid email (without user name)	@testing.com	The registration isn't complete.	Fail	Successful registration	B-9
+C-78	The invalid email (without domain name)	julia_guschina@com	The registration isn't complete.	Fail	Successful registration	B-9
+C-79	The invalid email (without domain)	julia_guschina@testing. 	The registration isn't complete.	Fail	Successful registration	B-9
+C-80	Put in the cross-site scripting	<script>alert("I hacked this!")</script>	The registration isn't complete.	Pass		
+C-81	Put in the SQL-injection	DROP TABLE USERS	Successful registration	Pass		
