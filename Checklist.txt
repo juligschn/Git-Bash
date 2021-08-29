@@ -1,3 +1,4 @@
+http://itcareer.pythonanywhere.com/
 ID	Title	Inputs	Expected result	Status	Actual Result	Bug Report's ID
 C-1	Registration with the valid data in all fields	"Name: Julia Surname: Gushchina Email: julia@gmail.com Password:Qwerty123"	Successful registration	Pass		
 C-2	Registration with the valid data in obligatory fields	"Name: Julia Surname: (empty) Email: julia@gmail.com Password:Qwerty123"	Successful registration	Fail	The registration isn't complete. The customer recieves a massage "Error. All fields are required"	B-1
