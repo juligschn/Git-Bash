@@ -1,270 +1,253 @@
 http://itcareer.pythonanywhere.com/
 
-List of UI bugs																								
-"1. Different style of prefilled information in fields: ""Name?"", ""Your email address.""
-2. The title ""Submit"" isn't situated in the middle of the button
+List of UI bugs																				
+1. Different style of prefilled information in fields: "Name?", "Your email address."
+2. The title "Submit" isn't situated in the middle of the button
 3. The page's title doesn't explain the purpose of the page
 4. There is no icon for showing the symbols in the field ""Password""
 5. The frame of the field doesn't change its colour when the invalid data has been entered. 
 6. Surname instead of Last name
 7. There is no information about the data and restrictions that every field requires. 
-8. Information in the error massage is doubled: ""Error: Error""
-9. The same error massage appears after different errors and inputs of incorrect data"																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-ID	B-1	Severity	Major																					
-Project	Demo-form	Priority																						
-Version	1	Status	Open																					
-Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
-Assigned to	Vadim																							
-Title																								
+8. Information in the error massage is doubled: "Error: Error"
+9. The same error massage appears after different errors and inputs of incorrect data	
+
+																				
+																				
+																				
+ID B-1	
+Severity Major																			
+Project	Demo-form	
+Priority																				
+Version	1
+Status	Open																					
+Author	Julia	
+Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)	
+Assigned to																								
+Title																					
 Filling in the field "Surname" is obligatory during registration																								
-Preconditions																								
+Preconditions																				
 Open the website http://itcareer.pythonanywhere.com/																								
 STR																								
-"1. Fill in the field ""Name"" using the valid data  (e.g. Julia)
-2. Fill in the field ""Email"" using the valid data (e.g. juliajulia@gmail.com)
-3. Fill in the field ""Password"" using the valid data (e.g. qwerty123)
-4. Left the field ""Surname"" empty 
-5. Click the button ""Submit"""																								
-																								
-																								
-																								
-Expected Result																								
+1. Fill in the field "Name" using the valid data  (e.g. Julia)
+2. Fill in the field "Email" using the valid data (e.g. juliajulia@gmail.com)
+3. Fill in the field "Password" using the valid data (e.g. qwerty123)
+4. Left the field "Surname" empty 
+5. Click the button "Submit"																																										
+Expected Result																				
 The registration is succesful. The customer recieves a massage "Success! Hello Username"																								
-Actual Result																								
+Actual Result																				
 The registration isn't complete. The customer recieves a massage "Error. All fields are required"																								
-Note																								
-																								
+Note																				
 Attachment																								
-																								
-																								
-ID	B-2	Severity	Show stopper																					
-Project	Demo-form	Priority																						
-Version	1	Status	Open																					
-Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
-Assigned to	Vadim																							
-Title																								
+																																																
+ID	B-2	
+Severity	Blocker																				
+Project	Demo-form	
+Priority																				
+Version	1	
+Status	Open																					
+Author	Julia	
+Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)	
+Assigned to																							
+Title																				
 The fields "Name" and 'Surname" require at least 4 symbols for succesful registration																								
-Preconditions																								
+Preconditions																				
 Open the website http://itcareer.pythonanywhere.com/																								
 STR																								
-"1. Fill in the field ""Name"" using the valid data (1-3 symbols, e.g. Jam)
-2. Fill in the field ""Surname"" using the valid data (1-3 symbols, e.g. Jo)
-3. Fill in the field ""Email"" using the valid data (jamjo@yandex.ru)
-4. Fill in the field ""Password"" using the valid data (qwerty123)
-5. Click the button ""Submit"""																								
-																								
-																								
-																								
-Expected Result																								
+1. Fill in the field "Name" using the valid data (1-3 symbols, e.g. Jam)
+2. Fill in the field "Surname" using the valid data (1-3 symbols, e.g. Jo)
+3. Fill in the field "Email" using the valid data (jamjo@yandex.ru)
+4. Fill in the field "Password" using the valid data (qwerty123)
+5. Click the button "Submit"																																									
+Expected Result																					
 The registration is succesful. The customer recieves a massage "Success! Hello Username Usersurname"																								
-Actual Result																								
+Actual Result																					
 The registration isn't complete. The customer recieves a massage "Error. All fields are required"																								
-Note																								
+Note																			
+Attachment																																											
 																								
-Attachment																								
-																								
-																								
-ID	B-3	Severity	Major																					
-Project	Demo-form	Priority																						
-Version	1	Status	Open																					
-Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
-Assigned to	Vadim																							
-Title																								
+ID	B-3	
+Severity    Major																				
+Project	Demo-form	
+Priority																					
+Version	1	
+Status	Open																					
+Author	Julia	
+Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)	
+Assigned to	
+
+Title																						
 More than 1 click is required while choosing the field or tapping  the button "Submit"																								
-Preconditions																								
+Preconditions																					
 Open the website http://itcareer.pythonanywhere.com/																								
 STR																								
-"1. Point the cursor at the any field or the button ""Submit""
-2. Click the cursor
-"																								
-																								
-Expected Result																								
+1. Point the cursor at the any field or the button "Submit"
+2. Click the cursor																																										
+Expected Result																					
 The action of the button "Submit" and all fields is reproduced after the first click																								
-Actual Result																								
+Actual Result																					
 The action of the button "Submit" and all fields is reproduced after several clicks																								
-Note																								
-																								
-Attachment																								
-																								
-																								
-ID	B-4	Severity	Major																					
-Project	Demo-form	Priority																						
-Version	1	Status	Open																					
-Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
-Assigned to	Vadim																							
-Title																								
+Note														
+Attachment																																																																	
+ID	B-4	
+Severity	Major																				
+Project	Demo-form
+Priority																				
+Version	1	
+Status	Open																					
+Author	Julia	
+Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)	
+Assigned to																							
+Title																						
 The Cyrillic alphabet is acceptable in any field																								
-Preconditions																								
+Preconditions																					
 Open the website http://itcareer.pythonanywhere.com/																								
 STR																								
-"1. Fill in the field ""Name"" using Cyrillic symbols (e.g. Петр)
-2. Fill in the field ""Surname"" using Cyrillic symbols (e.g. Семенов)
-3. Fill in the field ""Email"" using Cyrillic symbols (e.g. семеновпетр@джимейл.ком)
-4. Fill in the field ""Password"" using Cyrillic symbols (e.g. йцукен11)
-5. Click the button ""Submit"""																								
-																								
-																								
-																								
-Expected Result																								
+1. Fill in the field "Name" using Cyrillic symbols (e.g. Петр)
+2. Fill in the field "Surname" using Cyrillic symbols (e.g. Семенов)
+3. Fill in the field "Email" using Cyrillic symbols (e.g. семеновпетр@джимейл.ком)
+4. Fill in the field "Password" using Cyrillic symbols (e.g. йцукен11)
+5. Click the button "Submit"
+																					
+Expected Result																					
 The registration isn't complete. The customer recieves a massage "Error. Only the Latin alphabet is allowed"																								
-Actual Result																								
+Actual Result																					
 The registration is succesful. The customer recieves a massage "Success! Hello Петр Семенов"																								
-Note																								
-																								
+Note																					
 Attachment																								
-																								
-																								
-ID	B-5	Severity	Critical																					
-Project	Demo-form	Priority																						
-Version	1	Status	Open																					
-Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
-Assigned to	Vadim																							
-Title																								
+																																												
+ID	B-5	
+Severity	Critical																					
+Project	Demo-form	
+Priority																					
+Version	1	
+Status	Open																					
+Author	Julia	
+Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)		
+Assigned to	
+
+Title																						
 Any special symbols are acceptable in any field																								
-Preconditions																								
+Preconditions																					
 Open the website http://itcareer.pythonanywhere.com/																								
 STR																								
-"1. Fill in the field ""Name""using special symbols (e.g. ####)
-2. Fill in the field ""Surname"" using special symbols (e.g. &&&&)
-3. Fill in the field ""Email"" using Cyrillic special (e.g. ****)
-4. Fill in the field ""Password"" using special symbols (e.g. ++++)
-5. Click the button ""Submit"""																								
-																								
-																								
-																								
-Expected Result																								
+1. Fill in the field "Name" using special symbols (e.g. ####)
+2. Fill in the field "Surname" using special symbols (e.g. &&&&)
+3. Fill in the field "Email" using Cyrillic special (e.g. ****)
+4. Fill in the field "Password" using special symbols (e.g. ++++)
+5. Click the button "Submit"																																								
+Expected Result																					
 The registration isn't completed. The customer recieves hints about incorrect data in the fields																								
-Actual Result																								
+Actual Result																					
 The registration is succesful. The customer recieves a massage "Success! Hello  ####  &&&&"																								
-Note																								
+Note																						
+Attachment																																										
 																								
-Attachment																								
-																								
-																								
-ID	B-6	Severity	Major																					
-Project	Demo-form	Priority																						
-Version	1	Status	Open																					
-Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
-Assigned to	Vadim																							
-Title																								
+ID	B-6	
+Severity	Major																				
+Project	Demo-form	
+Priority																					
+Version	1	
+Status	Open																					
+Author	Julia	
+Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)	
+Assigned to																						
+Title																						
 Fields "Name", "Surname" and "Email" require not more than 25 symbols for successful registration																								
-Preconditions																								
+Preconditions																					
 Open the website http://itcareer.pythonanywhere.com/																								
-STR																								
-"1. Fill in the field ""Name"" using 26 or more symbols (e.g. Santa Jose Murtues Padilla Huanita)
-2. Fill in the field ""Surname"" using 26 or more symbols (e.g. Santa Jose Murtues Padilla Trabajerro)
-3. Fill in the field ""Email"" using 26 or more symbols (e.g. Santajose@murtuespadillatrabajerro.com)
-4. Fill in the field ""Password"" with a valid data
-5. Click the button ""Submit"""																								
-																								
-																								
-																								
-Expected Result																								
+STR																						
+1. Fill in the field "Name" using 26 or more symbols (e.g. Santa Jose Murtues Padilla Huanita)
+2. Fill in the field "Surname" using 26 or more symbols (e.g. Santa Jose Murtues Padilla Trabajerro)
+3. Fill in the field "Email" using 26 or more symbols (e.g. Santajose@murtuespadillatrabajerro.com)
+4. Fill in the field "Password" with a valid data
+5. Click the button "Submit"																																							
+Expected Result																					
 The registration is succesful. The customer recieves a massage "Success! Hello Santa Jose Murtues Padilla Huanita Santa Jose Murtues Padilla Trabajerro"																								
-																								
-Actual Result																								
+Actual Result																					
 The registration isn't complete. The customer recieves a massage "Error. All fields are required"																								
-Note																								
+Note																						
+Attachment																										
 																								
-Attachment																								
-																								
-																								
-ID	B-7	Severity	Major																					
-Project	Demo-form	Priority																						
-Version	1	Status	Open																					
-Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
-Assigned to	Vadim																							
-Title																								
+ID	B-7	
+Severity	Major																				
+Project	Demo-form
+Priority																					
+Version	1	
+Status	Open																					
+Author	Julia	
+Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)	
+Assigned to																								
+Title																						
 There is no restriction about the number of symbols that can be entered in the each field before clickin the button "Submit". 																								
-Preconditions																								
+Preconditions																					
 Open the website http://itcareer.pythonanywhere.com/																								
-STR																								
-"1. Fill in the field ""Name"" using a big amount of symbols (e.g. 200 symbols)
-2. Fill in the field ""Surname"" using a big amount of symbols (e.g. 200 symbols)
-3. Fill in the field ""Email"" using a big amount of symbols (e.g. 200 symbols)
-4. Fill in the field ""Password"" using a big amount of symbols (e.g. 200 symbols)
-5. Click the button ""Submit"""																								
+STR																						
+1. Fill in the field "Name" using a big amount of symbols (e.g. 200 symbols)
+2. Fill in the field "Surname" using a big amount of symbols (e.g. 200 symbols)
+3. Fill in the field "Email" using a big amount of symbols (e.g. 200 symbols)
+4. Fill in the field "Password" using a big amount of symbols (e.g. 200 symbols)
+5. Click the button "Submit"																																								
+Expected Result																					
+There is a restriction about the entered symbols. E.g. When the customer enters more than valid for each field quantity of symbols the input becomes invalid. Or the error message appears - "Unfortunately, You can't enter more than __ symbols")																																		
+Actual Result																					
+It's possible to enter a big amount of symbols (more then 200), after clicking "Submit" appears  the message "Error. All fields are required" that doesn't explain the real reason of the failure. 																																							
+Note																
+Attachment																																										
 																								
-																								
-																								
-Expected Result																								
-There is a restriction about the entered symbols. E.g. When the customer enters more than valid for each field quantity of symbols the input becomes invalid. Or the error message appears - "Unfortunately, You can't enter more than __ symbols")																								
-																								
-																								
-Actual Result																								
-It's possible to enter a big amount of symbols (more then 200), after clicking "Submit" appears  the message "Error. All fields are required" that doesn't explain the real reason of the failure. 																								
-																								
-Note																								
-																								
-Attachment																								
-																								
-																								
-ID	B-8	Severity	Major																					
-Project	Demo-form	Priority																						
-Version	1	Status	Open																					
-Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
-Assigned to	Vadim																							
-Title																								
+ID	B-8	
+Severity	Major																				
+Project	Demo-form	
+Priority																					
+Version	1	
+Status	Open																					
+Author	Julia	
+Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)	
+Assigned to																						
+Title																						
 It is possible to sign up using only spaces in the field "Password"																								
-Preconditions																								
+Preconditions																					
 Open the website http://itcareer.pythonanywhere.com/																								
-STR																								
-"1. Fill in the field ""Name"" using the valid data  (e.g. Julia)
-2. Fill in the field ""Surname"" using the valid data  (e.g. Gushchina)
-3. Fill in the field ""Email"" using the valid data (e.g.juliajulia@gmail.com)
-4. Fill in the field ""Password"" using only spaces (e.g.                       )
-5. Click the button ""Submit""                                           "																								
-																								
-																								
-																								
-Expected Result																								
-The registration isn't complete. The customer recieves a massage "Error. It's forbidden to use spaces in the field Password"																								
-																								
-Actual Result																								
+STR																						
+1. Fill in the field "Name" using the valid data  (e.g. Julia)
+2. Fill in the field "Surname" using the valid data  (e.g. Gushchina)
+3. Fill in the field "Email" using the valid data (e.g.juliajulia@gmail.com)
+4. Fill in the field "Password" using only spaces (e.g.                       )
+5. Click the button "Submit"                                        																																				
+Expected Result																					
+The registration isn't complete. The customer recieves a massage "Error. It's forbidden to use spaces in the field Password"																												
+Actual Result																					
 The registration is succesful. The customer recieves a massage "Success! Hello Julia  Gushchina"																								
-Note																								
+Note																					
+Attachment																																											
 																								
-Attachment																								
-																								
-																								
-ID	B-9	Severity	Critical																					
-Project	Demo-form	Priority																						
-Version	1	Status	Open																					
-Author	Julia	Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)																					
-Assigned to	Vadim																							
-Title																								
+ID	B-9	
+Severity	Critical																			
+Project	Demo-form	
+Priority																					
+Version	1	
+Status	Open																					
+Author	Julia	
+Environment	OS Windows 10 Pro, Yandex Browser 21.5.3.742 (64-bit), Google Chrome 91.0.4472.114 (64 -bit), Microsoft Edge Version 91.0.864.54 (64-bit version)	
+Assigned to
+																					
+Title																						
 The field "Email" doesn't require the special form of email and doesn't check its compulsory parts (@, domain name, dot)																								
-Preconditions																								
+Preconditions																					
 Open the website http://itcareer.pythonanywhere.com/																								
-STR																								
-"1. Fill in the field ""Name"" using the valid data  (e.g. Julia)
-2. Fill in the field ""Surname"" using the valid data  (e.g. Gushchina)
-3. Fill in the field ""Email"" using the invalid data without @, domain name and domain (e.g. juliajuliayandexcom)
-4. Fill in the field ""Password"" using the valid data (e.g. qwerty123)
-5. Click the button ""Submit"""																								
-																								
-																								
-																								
-Expected Result																								
-There is a hint under the field showing the correct fom of email. After entering the invalid data the massage for the customer about the compulsory parts and symbols appears.																								
-																								
-Actual Result																								
+STR																						
+1. Fill in the field "Name" using the valid data  (e.g. Julia)
+2. Fill in the field "Surname" using the valid data  (e.g. Gushchina)
+3. Fill in the field "Email" using the invalid data without @, domain name and domain (e.g. juliajuliayandexcom)
+4. Fill in the field "Password" using the valid data (e.g. qwerty123)
+5. Click the button "Submit"																																									
+Expected Result																					
+There is a hint under the field showing the correct fom of email. After entering the invalid data the massage for the customer about the compulsory parts and symbols appears.													
+Actual Result																					
 The registration is succesful. The customer recieves a massage "Success! Hello Julia  Gushchina"																								
-Note																								
-																								
-Attachment																								
-																								
-																								
-IMPROVEMENTS																								
-																								
+Note																						
+Attachment																																																																				
+IMPROVEMENTS																																									
 ID	Description
 1	Add special symbols (*) to highlight the obligatiry fields
 2	Add descriptions and hints about how to fill in the fields (e.g., the quantity of symbols, allowed symbols)
@@ -279,742 +262,3 @@ ID	Description
 11	Add the gradation of the password's reliability
 12	Add the possibility to sign up using the social media networks accounts
 13	It will be user-friendly to preserve previously filled in data in the fields "name" and "surname" if the password or email were entered incorrectly and the page was restarted																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
-																								
