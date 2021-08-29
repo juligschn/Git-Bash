@@ -1,16 +1,7 @@
 ID	Title	Inputs	Expected result	Status	Actual Result	Bug Report's ID
-C-1	Registration with the valid data in all fields	"Name: Julia
-Surname: Gushchina
-Email: julia@gmail.com
-Password:Qwerty123"	Successful registration	Pass		
-C-2	Registration with the valid data in obligatory fields	"Name: Julia
-Surname: (empty)
-Email: julia@gmail.com
-Password:Qwerty123"	Successful registration	Fail	The registration isn't complete. The customer recieves a massage "Error. All fields are required"	B-1
-C-3	Registration with the invalid data in all fields	"Name: ##***
-Surname: ##***
-Email: juliagmailcom
-Password: (8 spaces)"	The registration isn't complete.	Fail	Successful registration	
+C-1	Registration with the valid data in all fields	"Name: Julia Surname: Gushchina Email: julia@gmail.com Password:Qwerty123"	Successful registration	Pass		
+C-2	Registration with the valid data in obligatory fields	"Name: Julia Surname: (empty) Email: julia@gmail.com Password:Qwerty123"	Successful registration	Fail	The registration isn't complete. The customer recieves a massage "Error. All fields are required"	B-1
+C-3	Registration with the invalid data in all fields	"Name: ##*** Surname: ##*** Email: juliagmailcom Password: (8 spaces)"	The registration isn't complete.	Fail	Successful registration	
 Name. Preconditions: The fields "Surname", "Email", "Password" are filled in with the valid data						
 C-4	The valid ordinary name (Latin alphabet, 1-64 symbols, both cases)	Julia	Successful registration	Pass		
 C-5	The valid ordinary name (upper case)	JULIA	Successful registration	Pass		
